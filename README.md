@@ -1,5 +1,4 @@
-# Movie_retrieval
-
+Readme
 
 •	Open the terminal 
 
@@ -22,7 +21,7 @@ Step 4: Activating the virtual environment
 
 >>>conda activate <envname>
 
-•	Place the templates, static, test.py, and final.csv , actor1.xlxs,  tmdb_movies_data.csv  , requirements.txt in the virtual environment
+•	Place the templates, movienames.py and actor_names.py files in the virtual environment
 
 •	Use the command to install all the required python modules
 
@@ -31,44 +30,38 @@ Step 4: Activating the virtual environment
 
 •	Run the flask application 
 
->>>Python test.py
+>>>Python movienames.py
 
 •	Open the browser and paste the localhost address along with route decorator
 
-http://127.0.0.1:4998/
+http://127.0.0.1:5000/movie/1
 
-This will open the home page of the website.
-You can navigate to movies, actors and popular movies in the
-
-http://127.0.0.1:4998/actors
-
-http://127.0.0.1:4998/movies
-
-http://127.0.0.1:4998/highest
+1 = count  (you can change), these are the count of URLs the program has to crawl and scrape the data.
+                       (This dynamically loads the HTML page with data retrieved) 
 
 
-You can search for a movie in the search box. If it is present in the database, it recommends similar movies. If it is not present, it shows the movie is not in the database.
+Similarly for actor_names.py
+•	Run the flask application 
 
-Ex: try 
+>>>Python actor_names.py
 
-The Godfather
-Avengers: Age of Ultron 
+•	Open the browser and paste the localhost address along with the route decorator
 
-Etc. to see the recommended movie
+http://127.0.0.1:5000/actor/1
 
+1 = count  (you can change), these are the count of URLs the program has to crawl and scrape the data.
+              (This dynamically loads the HTML page with data retrieved)
 
-In the terminal,
-Run  
-            jupyter notebook.
-
-Run all cells to see data preprocessing, visualization is done.
-Check the collaborative filtering by changing the uid. It results in similar movies for that user.
 
 
 References:-
 
-•	https://www.analyticsvidhya.com/blog/2022/01/movie-recommendation-engine-with-nlp/
-•	https://www.kaggle.com/code/alaanabil98/investigate-tmdb-10000-movies-dataset/notebook
-•	https://www.kaggle.com/code/morrisb/how-to-recommend-anything-deep-recommender
-•	https://towardsdatascience.com/how-to-build-a-movie-recommendation-system-67e321339109
+•	https://www.geeksforgeeks.org/set-up-virtual-environment-for-python-using-anaconda/
+•	https://www.thepythoncode.com/article/extract-all-website-links-python
+•	https://blog.jovian.ai/web-scraping-popular-movies-using-beautifulsoup-5bab0852fee4
+•	https://towardsdatascience.com/web-scraping-basics-82f8b5acd45c
+•	https://www.topcoder.com/thrive/articles/web-crawler-in-python
 
+
+
+![image](https://user-images.githubusercontent.com/110701700/220212069-52b403db-670b-4415-add4-f999460fe505.png)
